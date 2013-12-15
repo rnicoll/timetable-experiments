@@ -2,7 +2,10 @@ package org.lostics.timetabling.model;
 
 import java.util.Calendar;
 
-
+/**
+ * Represents a schedule to which an event can run. Association of the schedule
+ * to event(s) is handled outside this class.
+ */
 public class EventSchedule {
     private int hourOfDay;
     private int dayOfWeek;

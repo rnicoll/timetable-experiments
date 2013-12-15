@@ -2,6 +2,10 @@ package org.lostics.timetabling.model;
 
 import java.sql.Date;
 
+/**
+ * A template for a sequence of events, describing when they start and finish
+ * running, and how often the recur.
+ */
 public class RecurringEvent {
     private final Module module;
     private int frequencyPerWeek;

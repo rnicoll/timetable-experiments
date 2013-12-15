@@ -1,8 +1,7 @@
 package org.lostics.timetabling.model;
 
 /**
- *
- * @author jrn
+ * A person (student, staff or otherwise).
  */
 public class Person {
     private final String username;
