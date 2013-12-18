@@ -1,5 +1,7 @@
 package org.lostics.timetabling.model;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -87,6 +89,14 @@ public class Module {
     public void setRecurringEvents(List<RecurringEvent> recurringEvents) {
         this.recurringEvents = recurringEvents;
     }
-    
+
+    public Collection<Person> getUsers() {
+        final List<Person> users = new ArrayList<>();
+        
+        users.addAll(this.getStaff());
+        users.addAll(this.getStudents());
+        
+        return users;
+    }
     
 }
